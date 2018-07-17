@@ -1,5 +1,5 @@
 ## Installation du projet
 ```
-yarn
+npm install
 npm run dev
 ```

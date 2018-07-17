@@ -303,7 +303,7 @@ function ExplodeAnimation(x,y)
 		dirs.push({x:(Math.random() * movementSpeed)-(movementSpeed/2),y:(Math.random() * movementSpeed)-(movementSpeed/2),z:(Math.random() * movementSpeed)-(movementSpeed/2)});
 	}
 	
-	var material = new THREE.PointsMaterial( { size: objectSize,  color: colors2[Math.round(Math.random() * colorsC.length)],depthWrite: false,blending: THREE.AdditiveBlending});
+	var material = new THREE.PointsMaterial( { size: objectSize,  color: colors2[Math.round(Math.random() * colors2.length)],depthWrite: false,blending: THREE.AdditiveBlending});
 	var particles = new THREE.Points( geometry, material );
 
 	this.object = particles;
